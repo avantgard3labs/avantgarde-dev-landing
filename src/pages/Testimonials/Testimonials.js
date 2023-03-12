@@ -12,9 +12,10 @@ function Testimonials() {
         },
     ];
 
+    console.log("data", data);
     return (
         <div>
-            <div class="testimonial-container">
+            <div className="testimonial-container">
                 {data.map((item) => {
                     console.log(`item is ${item}`);
                     return (
