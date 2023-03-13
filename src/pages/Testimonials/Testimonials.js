@@ -1,6 +1,6 @@
 import React from "react";
 import TestimonialsCard from "../../components/TestimonialsCard/TestimonialsCard";
-import "./Testimonials.css";
+// import "./Testimonials.css";
 
 function Testimonials() {
     const data = [
@@ -41,13 +41,17 @@ function Testimonials() {
     ];
 
     return (
-        <div className="test">
+        <div className="test subpixel-antialiased h-screen overflow-hidden  mx-auto ">
             <div className="testimonials-full">
                 {" "}
-                <h1>Testimonials</h1>
-                <h2>What our clients say about us</h2>
+                <h1 className="leading-6 text-white text-center font-black  not-italic text-[14px]  lg:text-[20px]  lg:my-4 2xl:mt-[100px] xl:text-[32px]">
+                    Testimonials
+                </h1>
+                <h2 className="leading-6 text-white text-center font-normal  not-italic text-[10px]  lg:text-[16px]  lg:mb-4 xl:text-[20px] 2xl:mb-[40px]">
+                    What our clients say about us
+                </h2>
             </div>
-            <div class="testimonials-container">
+            <div class="testimonials-container md:justify-center  md:flex md:max-w-[900px] lg:w-[100%]  items-center flex-wrap mx-auto  xl:max-w-[1400px]">
                 {data.map((item) => {
                     console.log(`item is ${item}`);
                     return (
