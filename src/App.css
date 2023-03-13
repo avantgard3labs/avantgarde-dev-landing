@@ -1,0 +1,13 @@
+.page {
+    opacity: 0;
+}
+
+.fade-out {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+
+.fade-in {
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
