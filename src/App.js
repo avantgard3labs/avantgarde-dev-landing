@@ -1,7 +1,14 @@
 import "./App.css";
+import ContactUs from './pages/ContactUs/ContactUs'
+import Footer from "./pages/Footer/Footer";
 
 function App() {
-    return <div className="App">App</div>;
+    return (
+        <div className="App">
+            <ContactUs />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
