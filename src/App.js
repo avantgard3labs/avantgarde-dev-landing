@@ -1,5 +1,6 @@
 import "./App.css";
-import TestimonialsCard from "./components/TestimonialsCard/TestimonialsCard";
+import PageContainer from "./components/PageContainer/PageContainer";
+import "./App.css";
 import Testimonials from "./pages/Testimonials/Testimonials";
 
 function App() {
