@@ -13,8 +13,7 @@ function Footer() {
                         Need something for your web3 venture?
                     </h1>
                     <p className="text-white flex-1 text-center">
-                        We'll build it for you! Hit us up during your convenient
-                        time.
+                        We'll build it for you! Hit us up during your convenient time.
                     </p>
                     <button className="text-white text-xl font-black rounded-lg px-4 py-2 btn w-[206px] h-[56px] btn">
                         Lets Go!
@@ -25,30 +24,28 @@ function Footer() {
             <div className="fcontainer ">
                 <div className="flex-col items-center justify-center mb-10 fcontainer">
                     <img alt="" src={logo} />
-                    <h1 className="text-white font-black text-2xl font-monument">
-                        Avant Garde Labs
-                    </h1>
+                    <h1 className="text-white font-black text-2xl font-monument">Avant Garde Labs</h1>
                     <p className="text-white">Excellence in innovation</p>
                 </div>
             </div>
 
             <div className="fcontainer mb-4">
                 <div className="flex">
-                    <a href="tele">
+                    <a href="#">
                         <img
                             className="mr-16 w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
                             src={telegram}
                         />
                     </a>
-                    <a href="git">
+                    <a href="https://github.com/avantgard3labs">
                         <img
                             className="mr-16 w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
                             src={github}
                         />
                     </a>
-                    <a href="linkedi">
+                    <a href="#">
                         <img
                             className="w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
