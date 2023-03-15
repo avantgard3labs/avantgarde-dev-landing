@@ -11,12 +11,11 @@ import Stars from "../shared/Stars";
 import Blob from "../TestimonialsCard/Blob/Blob";
 import "./styles.css";
 
-function PageContainer({ toggleNav, isNavOpen }) {
-    const [currentPage, setCurrentPage] = useState(0);
+function PageContainer({ currentPage, setCurrentPage, toggleNav, isNavOpen }) {
     const [internalPage, setInternalPage] = useState(0);
     const lastTime = useRef(moment());
 
-    const numberOfPages = 5;
+    const numberOfPages = 6;
 
     const getTargetPage = (currentPage, isUp) => {
         if (isUp) {
@@ -86,12 +85,14 @@ function PageContainer({ toggleNav, isNavOpen }) {
             case 0:
                 return <AGLogo />;
             case 1:
-                return <Testimonials />;
-            case 2:
-                return <ContactUs />;
-            case 3:
                 return <Services />;
+            case 2:
+                return <Clients />;
+            case 3:
+                return <Testimonials />;
             case 4:
+                return <ContactUs />;
+            case 5:
                 return <Footer />;
 
             default:

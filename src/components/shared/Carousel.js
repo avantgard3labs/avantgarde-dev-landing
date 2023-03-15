@@ -34,10 +34,7 @@ const Carousel = ({ clients }) => {
     };
 
     const onPrevClick = () => {
-        const prevIndex =
-            showingIndex.current === 0
-                ? clients.length - 1
-                : showingIndex.current - 1;
+        const prevIndex = showingIndex.current === 0 ? clients.length - 1 : showingIndex.current - 1;
         showingIndex.current = prevIndex;
         itemsRef.current?.[showingIndex.current]?.scrollIntoView({
             behavior: "smooth",
@@ -52,7 +49,7 @@ const Carousel = ({ clients }) => {
                 className="w-12 sm:w-20 cursor-pointer transition-all hover:scale-110 transform"
                 onClick={onPrevClick}
             />
-            <div className=" flex-1 flex sm:gap-20 gap-8 items-center overflow-x-scroll carousel">
+            <div className=" flex-1 flex sm:gap-20 gap-8 items-center overflow-x-scroll carousel-scrollhide">
                 {clients.map(({ name, image }, index) => (
                     <img
                         src={image}

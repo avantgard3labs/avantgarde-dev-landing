@@ -3,6 +3,7 @@ import "./styles.css";
 
 function NavContainer({ children }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState(0);
 
     const toggleNav = () => setIsOpen(!isOpen);
     const buttonClass = " transition-all transform hover:scale-110";
@@ -12,6 +13,8 @@ function NavContainer({ children }) {
             <div className={"body " + (isOpen ? "nav-on" : "")}>
                 {children ? (
                     React.cloneElement(children, {
+                        currentPage,
+                        setCurrentPage,
                         toggleNav,
                         isNavOpen: isOpen,
                     })
@@ -20,11 +23,20 @@ function NavContainer({ children }) {
                 )}
             </div>
             <div className={"nav " + (isOpen ? "nav-on" : "")}>
-                <button className={buttonClass}>Home</button>
-                <button className={buttonClass}>Contact</button>
-                <button className={buttonClass}>About Us</button>
-                <button className={buttonClass}>Projects</button>
-                <button className={buttonClass}>Random</button>
+                {["Home", "Services", "Clients", "Testimonials", "Contact Us", "About"].map(
+                    (item, index) => {
+                        return (
+                            <button
+                                onClick={() => {
+                                    setCurrentPage(index);
+                                }}
+                                className={buttonClass}
+                            >
+                                {item}
+                            </button>
+                        );
+                    }
+                )}
             </div>
         </div>
     );
