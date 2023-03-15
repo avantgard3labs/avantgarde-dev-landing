@@ -5,7 +5,7 @@ import Glass from "../shared/Glass";
 
 function TestimonialsCard({ review, author, work, img }) {
     return (
-        <Glass className=" text-white p-2 max-w-200 md:max-w-xs ">
+        <Glass className=" glass-hover text-white p-2 max-w-200 md:max-w-xs ">
             <div className="testimonialsContent">
                 <div className="testimonialsQuotes">
                     {" "}

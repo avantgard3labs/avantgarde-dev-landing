@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 @layer base {
     html {
         font-family: Poppins, system-ui, sans-serif;
@@ -18,3 +19,12 @@
     background-size: cover; */
     }
 }
+=======
+
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+>>>>>>> 4842cb3982cccab721bb1504e4869c7bf4e281ac

@@ -2,9 +2,11 @@ import moment from "moment";
 import { useCallback, useEffect, useRef, useState } from "react";
 import AGLogo from "../../pages/AGLogo/AGLogo";
 import Testimonials from "../../pages/Testimonials/Testimonials";
+import Stars from "../shared/Stars";
+import Blob from "../TestimonialsCard/Blob/Blob";
 import "./styles.css";
 
-function PageContainer({ toggleNav }) {
+function PageContainer({ toggleNav, isNavOpen }) {
     const [currentPage, setCurrentPage] = useState(0);
     const [internalPage, setInternalPage] = useState(0);
     const lastTime = useRef(moment());
@@ -13,7 +15,7 @@ function PageContainer({ toggleNav }) {
         if (internalPage === currentPage) return;
 
         const page = document.querySelector("#something");
-        page.classList.remove("visible");
+        page?.classList.remove("visible");
 
         setTimeout(() => {
             setInternalPage(currentPage);
@@ -22,7 +24,7 @@ function PageContainer({ toggleNav }) {
 
     useEffect(() => {
         const page = document.querySelector("#something");
-        page.classList.add("visible");
+        page?.classList.add("visible");
     }, [internalPage]);
 
     const handleNavigation = (e) => {
@@ -70,9 +72,22 @@ function PageContainer({ toggleNav }) {
     };
 
     return (
-        <div className={`page visible`} id="something">
-            {getPage()}
-        </div>
+        <>
+            <Stars />
+            <Blob className={`page${currentPage + 1}`} />
+            <div
+                className={`page visible border-8 z-10 ${
+                    isNavOpen ? " border-purple-700" : "border-transparent"
+                }`}
+                id="something"
+            >
+                {getPage()}
+            </div>
+            <div
+                className=" w-5 h-5 bg-white absolute top-7 right-7 cursor-pointer"
+                onClick={toggleNav}
+            ></div>
+        </>
     );
 }
 

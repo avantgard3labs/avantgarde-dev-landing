@@ -1,14 +1,14 @@
 .page1 {
-    transform: translate(-20vw,-20vw);
+    transform: translate(-20vw, -20vw);
 }
 .page2 {
-    transform: translate(-10vw,-25vw);
+    transform: translate(-10vw, -25vw);
 }
 .page3 {
-    transform: translate(70vw,-30vw);
+    transform: translate(70vw, -30vw);
 }
 .page4 {
-    transform: translate(-40vw,30vw);
+    transform: translate(-40vw, 30vw);
 }
 
 .blobContainer {

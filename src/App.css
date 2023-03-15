@@ -1,7 +1,16 @@
 .glass {
-    background: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.5s ease;
+    perspective: 100px;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-hover:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotateY(-10deg) rotateX(-10deg);
 }

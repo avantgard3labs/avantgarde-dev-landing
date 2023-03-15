@@ -9,7 +9,14 @@ function NavContainer({ children }) {
     return (
         <div className="nav-container">
             <div className={"body " + (isOpen ? "nav-on" : "")}>
-                {children ? React.cloneElement(children, { toggleNav }) : <></>}
+                {children ? (
+                    React.cloneElement(children, {
+                        toggleNav,
+                        isNavOpen: isOpen,
+                    })
+                ) : (
+                    <></>
+                )}
             </div>
             <div className={"nav " + (isOpen ? "nav-on" : "")}>
                 <button>Home</button>

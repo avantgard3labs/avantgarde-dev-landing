@@ -1,0 +1,46 @@
+.contactus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  background: linear-gradient(276.08deg, #FF66AA -1.12%, #B358AB 47.57%, #5D60BB 98.33%);
+
+}
+/* 
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+} */
+
+.input-data{
+  outline: nones;
+  border: 1px solid gray;
+  background: linear-gradient(250.79deg, rgba(154, 154, 154, 0.2) -0.91%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5px;
+  /* width: 500px;
+  height: 69px; */
+}
+
+input::placeholder{
+  color: gray;
+  padding-left: 10px;
+}
+
+.message{
+  border: 1px solid gray;
+  background: linear-gradient(250.79deg, rgba(154, 154, 154, 0.2) -0.91%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5px;
+  width: 500px;
+  height: 100px;
+  
+}
+
+textarea::placeholder{
+  color: gray;
+  padding-left: 10px;
+  padding-top: 10px;
+}
