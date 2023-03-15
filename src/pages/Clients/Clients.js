@@ -43,7 +43,12 @@ const Clients = () => {
         <div className=" w-full h-full flex flex-col items-center p-3">
             <SectionHeader title="Our Clients" />
 
-            <div className=" w-full max-w-7xl flex-1 mt-20">
+            <div
+                className=" w-full max-w-7xl flex-1 mt-20"
+                style={{
+                    marginTop: "30vh",
+                }}
+            >
                 <Carousel clients={clients} />
             </div>
         </div>

@@ -23,20 +23,26 @@ function NavContainer({ children }) {
                 )}
             </div>
             <div className={"nav " + (isOpen ? "nav-on" : "")}>
-                {["Home", "Services", "Clients", "Testimonials", "Contact Us", "About"].map(
-                    (item, index) => {
-                        return (
-                            <button
-                                onClick={() => {
-                                    setCurrentPage(index);
-                                }}
-                                className={buttonClass}
-                            >
-                                {item}
-                            </button>
-                        );
-                    }
-                )}
+                {[
+                    "Home",
+                    "Services",
+                    "Clients",
+                    "Testimonials",
+                    "Contact Us",
+                    "About",
+                ].map((item, index) => {
+                    return (
+                        <button
+                            onClick={() => {
+                                setCurrentPage(index);
+                                toggleNav();
+                            }}
+                            className={buttonClass}
+                        >
+                            {item}
+                        </button>
+                    );
+                })}
             </div>
         </div>
     );

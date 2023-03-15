@@ -2,7 +2,6 @@
 .nav-icon {
     width: 35px;
     height: 30px;
-    margin: 10px 10px;
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -48,4 +47,28 @@
 .nav-icon.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: 13px;
+}
+
+@media (max-width: 600px) {
+    .nav-icon {
+        width: 20px;
+        height: 16px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .nav-icon span:nth-child(1) {
+        top: 0px;
+        left: 0px;
+    }
+    .nav-icon span:nth-child(2) {
+        top: 6px;
+        left: 0px;
+        opacity: 1;
+    }
+
+    .nav-icon span {
+        height: 2px;
+    }
 }

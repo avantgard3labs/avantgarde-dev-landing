@@ -67,8 +67,18 @@ function PageContainer({ currentPage, setCurrentPage, toggleNav, isNavOpen }) {
 
         document.addEventListener("touchend", (e) => {
             touchendY = e.changedTouches[0].screenY;
-            const isUp = touchstartY - touchendY > 0;
-            setCurrentPage((currentPage) => getTargetPage(currentPage, isUp));
+            const dragDistance = touchstartY - touchendY;
+            if (Math.abs(dragDistance) < 50) {
+                return;
+            }
+            const isUp = touchstartY - touchendY < 0;
+            const now = moment();
+            if (now.diff(lastTime.current, "second") > 0) {
+                setCurrentPage((currentPage) =>
+                    getTargetPage(currentPage, isUp)
+                );
+                lastTime.current = now;
+            }
         });
     }, []);
 

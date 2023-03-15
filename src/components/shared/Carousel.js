@@ -34,7 +34,10 @@ const Carousel = ({ clients }) => {
     };
 
     const onPrevClick = () => {
-        const prevIndex = showingIndex.current === 0 ? clients.length - 1 : showingIndex.current - 1;
+        const prevIndex =
+            showingIndex.current === 0
+                ? clients.length - 1
+                : showingIndex.current - 1;
         showingIndex.current = prevIndex;
         itemsRef.current?.[showingIndex.current]?.scrollIntoView({
             behavior: "smooth",
@@ -58,7 +61,7 @@ const Carousel = ({ clients }) => {
                         ref={(ref) => {
                             itemsRef.current[index - 1] = ref;
                         }}
-                        className=" sm:h-40 h-32"
+                        className=" sm:h-40 h-24"
                     />
                 ))}
             </div>

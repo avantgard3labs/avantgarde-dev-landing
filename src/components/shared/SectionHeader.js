@@ -6,7 +6,9 @@ const SectionHeader = ({ title, subtile, className }) => {
                 className
             }
         >
-            <h1 className=" text-4xl font-bold">{title}</h1>
+            <h1 className=" text-lg md:text-4xl sm:text-2xl font-bold">
+                {title}
+            </h1>
             {/* <p className=" text-xl">What our clients say about us</p> */}
         </div>
     );
