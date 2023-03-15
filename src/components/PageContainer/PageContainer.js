@@ -105,7 +105,7 @@ function PageContainer({ toggleNav, isNavOpen }) {
             <Blob className={`page${currentPage + 1}`} />
             <div
                 className={`page visible border-8 z-10 ${
-                    isNavOpen ? " border-[#1b2735]" : "border-transparent"
+                    isNavOpen ? " border-white" : "border-transparent"
                 }`}
                 id="something"
             >
