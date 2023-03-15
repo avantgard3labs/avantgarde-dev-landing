@@ -23,15 +23,18 @@
     right: -25%;
     top: 25%;
     opacity: 0;
+    display: none;
 }
 
 .nav.nav-on {
     right: 0;
     animation: fade-in 0.7s 0.4s ease-out 1 forwards;
+    display: block;
 }
 
 .nav button {
     display: block;
+
     font-size: 50px;
     background: none;
     color: white;
