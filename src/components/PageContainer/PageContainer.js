@@ -1,6 +1,9 @@
 import moment from "moment";
 import { useCallback, useEffect, useRef, useState } from "react";
 import AGLogo from "../../pages/AGLogo/AGLogo";
+import Clients from "../../pages/Clients/Clients";
+import ContactUs from "../../pages/ContactUs/ContactUs";
+import Footer from "../../pages/Footer/Footer";
 import Testimonials from "../../pages/Testimonials/Testimonials";
 import Stars from "../shared/Stars";
 import Blob from "../TestimonialsCard/Blob/Blob";
@@ -11,6 +14,22 @@ function PageContainer({ toggleNav, isNavOpen }) {
     const [internalPage, setInternalPage] = useState(0);
     const lastTime = useRef(moment());
 
+    const numberOfPages = 4;
+
+    const getTargetPage = (currentPage, isUp) => {
+        if (isUp) {
+            if (currentPage !== 0) {
+                return currentPage - 1;
+            } else {
+                return currentPage;
+            }
+        } else {
+            if (currentPage === numberOfPages - 1) {
+                return currentPage;
+            }
+            return (currentPage + 1) % numberOfPages;
+        }
+    };
     useEffect(() => {
         if (internalPage === currentPage) return;
 
@@ -28,11 +47,11 @@ function PageContainer({ toggleNav, isNavOpen }) {
     }, [internalPage]);
 
     const handleNavigation = (e) => {
-        const isUp = e.deltaY > 0 ? true : false;
+        const isUp = e.deltaY < 0 ? true : false;
         const now = moment();
 
         if (now.diff(lastTime.current, "second") > 0) {
-            setCurrentPage((currentPage) => (currentPage === 0 ? 1 : 0));
+            setCurrentPage((currentPage) => getTargetPage(currentPage, isUp));
             lastTime.current = now;
         }
     };
@@ -48,7 +67,7 @@ function PageContainer({ toggleNav, isNavOpen }) {
         document.addEventListener("touchend", (e) => {
             touchendY = e.changedTouches[0].screenY;
             const isUp = touchstartY - touchendY > 0;
-            setCurrentPage((currentPage) => (currentPage === 0 ? 1 : 0));
+            setCurrentPage((currentPage) => getTargetPage(currentPage, isUp));
         });
     }, []);
 
@@ -66,6 +85,11 @@ function PageContainer({ toggleNav, isNavOpen }) {
                 return <AGLogo />;
             case 1:
                 return <Testimonials />;
+            case 2:
+                return <ContactUs />;
+            case 3:
+                return <Footer />;
+
             default:
                 return <AGLogo />;
         }
@@ -77,14 +101,14 @@ function PageContainer({ toggleNav, isNavOpen }) {
             <Blob className={`page${currentPage + 1}`} />
             <div
                 className={`page visible border-8 z-10 ${
-                    isNavOpen ? " border-purple-700" : "border-transparent"
+                    isNavOpen ? " border-[#1b2735]" : "border-transparent"
                 }`}
                 id="something"
             >
                 {getPage()}
             </div>
             <div
-                className=" w-5 h-5 bg-white absolute top-7 right-7 cursor-pointer"
+                className=" w-5 h-5 bg-white absolute top-7 right-7 cursor-pointer "
                 onClick={toggleNav}
             ></div>
         </>

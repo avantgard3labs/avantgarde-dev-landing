@@ -10,6 +10,12 @@
 .page4 {
     transform: translate(-40vw, 30vw);
 }
+.page5 {
+    transform: translate(-10vw, -25vw);
+}
+.page6 {
+    transform: translate(70vw, -30vw);
+}
 
 .blobContainer {
     width: 100vw;
@@ -23,7 +29,7 @@
     width: 80vw;
     height: 80vw;
     /* transform: translate(-40%, -60%); */
-    transition: all 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    transition: all 5s cubic-bezier(0.07, 0.8, 0.16, 1);
     border-radius: 50%;
     position: absolute;
     animation: blob2 3s alternate infinite;

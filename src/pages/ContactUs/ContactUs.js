@@ -1,32 +1,53 @@
-// import React from "react";
-// import ContactUsCard from "../../components/ContactUsCard/ContactUsCard";
-// import TextArea from "../../components/ContactUsCard/TextArea"
-import "./ContactUs.css"
+import SectionHeader from "../../components/shared/SectionHeader";
+import "./ContactUs.css";
 
 function ContactUs() {
+    const inputClass = "glass px-4 text-white placeholder-white flex-1 p-3";
+    const labelClass =
+        "text-white  sm:text-[32px] font-medium mr-[85px] sm:w-28 text-xl w-12";
     return (
-        <div className="contactus mt-20">
-            <h1 className="text-white font-black text-5xl text-center mb-16">Contact us</h1>
-            <div className="flex-col px-3 max-w-[700px]">
-                <form className=""> 
-                    <div className="mb-5 flex">
-                        <label className="text-white text-[32px] font-black mr-[85px] max-w-[150px] sm:max-w-[150px]">Name</label>
-                        <input className="input-data flex-1" type="text" placeholder="Enter your name here"/>
+        <div className="w-full h-full flex  flex-col items-center">
+            <SectionHeader />
+            <div className=" flex-1 flex w-full justify-center items-center">
+                <div className="flex flex-col max-w-3xl w-full gap-5 px-3">
+                    <div className=" flex w-full">
+                        <label className={labelClass}>Name</label>
+                        <input
+                            className={inputClass}
+                            type="text"
+                            placeholder="Enter your name here"
+                        />
                     </div>
-                    <div className="mb-5 flex">
-                        <label className="text-white text-[32px] font-black mr-[90px] max-w-[150px] sm:max-w-[150px]">Email</label>
-                        <input className="input-data flex-1" type="email" placeholder="Enter your email here"/>
+                    <div className=" flex w-full">
+                        <label className={labelClass}>Email</label>
+                        <input
+                            className={inputClass}
+                            type="text"
+                            placeholder="Enter your name here"
+                        />
                     </div>
-                    <div className="mb-5 flex">
-                        <label className="text-white text-[32px] font-black mr-[27px] max-w-[150px] sm:max-w-[150px]">Company</label>
-                        <input className="input-data flex-1" type="text" placeholder="Enter your company here"/>
+                    <div className=" flex w-full">
+                        <label className={labelClass}>Company</label>
+                        <input
+                            className={inputClass}
+                            type="text"
+                            placeholder="Enter your name here"
+                        />
                     </div>
-                    <div className="mb-5 flex">
-                        <label className="text-white text-[32px] font-black mr-[38px] pb-5 input max-w-[150px] sm:max-w-[150px]">Message</label>
-                        <textarea className="message text-white flex-1" placeholder="Enter your message here"></textarea>
+                    <div className=" flex w-full">
+                        <label className={labelClass}>Message</label>
+                        <textarea
+                            className={inputClass + " h-28 p-3"}
+                            placeholder="Enter your message here"
+                        ></textarea>
                     </div>
-                    <button className="btn w-[150px] h-[40px] px-5 py-2 rounded-lg text-white font-black ml-44" type="submit"> Send </button>
-                </form>
+                    <button
+                        className="btn w-[150px] h-[40px] px-5 py-2 rounded-lg text-white font-black ml-[197px] hover:scale-110 transform transition-all"
+                        type="submit"
+                    >
+                        Send
+                    </button>
+                </div>
             </div>
         </div>
     );

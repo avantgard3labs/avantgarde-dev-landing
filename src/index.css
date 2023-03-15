@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @layer base {
     html {
         font-family: Poppins, system-ui, sans-serif;
@@ -19,12 +24,18 @@
     background-size: cover; */
     }
 }
-=======
-
-html{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: black;
+textarea,
+input {
+    outline: none;
 }
->>>>>>> 4842cb3982cccab721bb1504e4869c7bf4e281ac
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
