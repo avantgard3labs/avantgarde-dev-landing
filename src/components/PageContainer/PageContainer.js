@@ -1,8 +1,10 @@
 import moment from "moment";
 import { useCallback, useEffect, useRef, useState } from "react";
+import NavIcon from "../NavIcon/NavIcon";
 import AGLogo from "../../pages/AGLogo/AGLogo";
 import Clients from "../../pages/Clients/Clients";
 import ContactUs from "../../pages/ContactUs/ContactUs";
+import Services from "../../pages/Services/Services";
 import Footer from "../../pages/Footer/Footer";
 import Testimonials from "../../pages/Testimonials/Testimonials";
 import Stars from "../shared/Stars";
@@ -14,7 +16,7 @@ function PageContainer({ toggleNav, isNavOpen }) {
     const [internalPage, setInternalPage] = useState(0);
     const lastTime = useRef(moment());
 
-    const numberOfPages = 4;
+    const numberOfPages = 5;
 
     const getTargetPage = (currentPage, isUp) => {
         if (isUp) {
@@ -88,6 +90,8 @@ function PageContainer({ toggleNav, isNavOpen }) {
             case 2:
                 return <ContactUs />;
             case 3:
+                return <Services />;
+            case 4:
                 return <Footer />;
 
             default:
@@ -107,10 +111,7 @@ function PageContainer({ toggleNav, isNavOpen }) {
             >
                 {getPage()}
             </div>
-            <div
-                className=" w-5 h-5 bg-white absolute top-7 right-7 cursor-pointer "
-                onClick={toggleNav}
-            ></div>
+            <NavIcon isNavOpen={isNavOpen} toggleNav={toggleNav} />
         </>
     );
 }
