@@ -97,3 +97,8 @@
         color: rgba(255, 255, 255);
     }
 }
+
+.but {
+    color: white;
+    font-size: 40px;
+}

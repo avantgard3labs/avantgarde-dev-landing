@@ -1,11 +1,11 @@
-import React from 'react'
+import { useState } from "react";
 import "./Blob.css"
 
-function Blob() {
+function Blob({className}) {
+
   return (
-      <div className="blobContainer">
-          {/* <div class="blob1"></div> */}
-          <div class="blob2"></div>
+      <div className={"blobContainer "}>
+          <div className={"blob2 "  +  className}></div>
       </div>
   );
 }
