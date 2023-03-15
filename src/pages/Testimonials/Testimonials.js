@@ -5,7 +5,7 @@ import TestimonialsCard from "../../components/TestimonialsCard/TestimonialsCard
 import Blob from "../../components/TestimonialsCard/Blob/Blob";
 import "../../components/TestimonialsCard/Blob/Blob.css";
 
-// import "./Testimonials.css";
+import "./Testimonials.css";
 
 function Testimonials() {
     const [pageIndex, setPageIndex] = useState(1);

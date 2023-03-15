@@ -3,6 +3,7 @@ import { ImQuotesLeft } from "react-icons/im";
 import Glass from "../shared/Glass";
 // import "../TestimonialsCard/TestimonialsCard.css";
 
+
 function TestimonialsCard({ review, author, work, img }) {
     return (
         <Glass className=" glass-hover text-white p-2 max-w-200 md:max-w-xs ">

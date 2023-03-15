@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Monument";
+    src: url("../../font//MonumentExtended-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .testimonialsContent h3 {
     font-style: normal;
     font-weight: 400;
