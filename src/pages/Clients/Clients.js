@@ -44,9 +44,9 @@ const Clients = () => {
             <SectionHeader title="Our Clients" />
 
             <div
-                className=" w-full max-w-7xl flex-1 mt-20"
+                className=" w-full max-w-7xl"
                 style={{
-                    marginTop: "30vh",
+                    marginTop: "20vh",
                 }}
             >
                 <Carousel clients={clients} />
