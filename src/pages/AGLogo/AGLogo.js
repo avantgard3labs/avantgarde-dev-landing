@@ -3,6 +3,7 @@ import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense, useRef, useState, useEffect } from "react";
 import Logo from "./ag_3d_logo.glb";
+import { ReactComponent as DownArrow } from "../../assets/down-arrow.svg";
 
 const AGLogo = () => {
     const Model = () => {
@@ -54,7 +55,7 @@ const AGLogo = () => {
     };
 
     return (
-        <div style={{ height: "100vh", width: "100vw" }}>
+        <div style={{ height: "100vh", width: "100vw" }} className="relative">
             <Canvas style={{ height: "100%", width: "100%" }}>
                 <Suspense fallback={null}>
                     <Model />
@@ -65,6 +66,10 @@ const AGLogo = () => {
                     />
                 </Suspense>
             </Canvas>
+            <div className=" absolute bottom-4 left-1/2 -translate-x-1/2 font-monument text-center text-[30px] sm:text-[35px] md:text-[45px] font-extrabold text-white flex flex-col items-center">
+                <h1>AvantGarde Labs</h1>
+                <DownArrow className=" h-8" />
+            </div>
         </div>
     );
 };
