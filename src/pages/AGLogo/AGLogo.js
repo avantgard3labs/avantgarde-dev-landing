@@ -1,8 +1,9 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense, useRef, useState, useEffect } from "react";
-import Logo from "./ag_3d_logo.glb";
+import Logo from "./ag_logo.glb";
 import { ReactComponent as DownArrow } from "../../assets/down-arrow.svg";
 
 const AGLogo = () => {
@@ -14,20 +15,13 @@ const AGLogo = () => {
         const gltf = useLoader(GLTFLoader, Logo);
 
         useFrame(({ mouse }) => {
-            setTargetRotation([
-                (mouse.y * Math.PI) / 8,
-                (mouse.x * Math.PI) / 8,
-                0,
-            ]);
+            setTargetRotation([(mouse.y * -Math.PI) / 8, (mouse.x * Math.PI) / 8, 0]);
         });
 
         useEffect(() => {
             const updateRotation = () => {
                 setCurrentRotation((currentRotation) =>
-                    currentRotation.map(
-                        (value, index) =>
-                            value + 0.3 * (targetRotation[index] - value)
-                    )
+                    currentRotation.map((value, index) => value + 0.3 * (targetRotation[index] - value))
                 );
             };
 
@@ -36,19 +30,9 @@ const AGLogo = () => {
         }, [targetRotation]);
 
         return (
-            <group
-                ref={group}
-                rotation={currentRotation}
-                position={[0, 1, 0]}
-                scale={[1, 1, 1]}
-            >
+            <group ref={group} rotation={currentRotation} position={[0, 1, 0]} scale={[1, 1, 1]}>
                 <mesh>
                     <primitive object={gltf.scene} />
-                    <meshStandardMaterial
-                        metalness={1}
-                        roughness={0.3}
-                        color={"#FFFFFF"}
-                    />
                 </mesh>
             </group>
         );
@@ -59,11 +43,8 @@ const AGLogo = () => {
             <Canvas style={{ height: "100%", width: "100%" }}>
                 <Suspense fallback={null}>
                     <Model />
-                    <pointLight
-                        position={[10, 10, 10]}
-                        color={"#954ea4"}
-                        intensity={3}
-                    />
+                    {/* <Environment preset="apartment" blur={1} rotation={[20, 90, 20]} /> */}
+                    <pointLight color={"#954ea4"} intensity={20} position={[0, 10, 10]} />
                 </Suspense>
             </Canvas>
             <div className=" absolute bottom-4 left-1/2 -translate-x-1/2 font-monument text-center text-[30px] sm:text-[35px] md:text-[45px] font-extrabold text-white flex flex-col items-center">
