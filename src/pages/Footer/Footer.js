@@ -25,12 +25,10 @@ function Footer() {
             <div className="fcontainer ">
                 <div className="flex-col items-center justify-center mb-10 fcontainer">
                     <img alt="" src={logo} />
-                    <h1 className="text-white font-black text-2xl">
+                    <h1 className="text-white font-black text-2xl font-monument">
                         Avant Garde Labs
                     </h1>
-                    <p className="text-white font-fam">
-                        Excellence in innovation
-                    </p>
+                    <p className="text-white">Excellence in innovation</p>
                 </div>
             </div>
 
@@ -38,21 +36,21 @@ function Footer() {
                 <div className="flex">
                     <a href="tele">
                         <img
-                            className="mr-16 w-[50px] h-[50px]"
+                            className="mr-16 w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
                             src={telegram}
                         />
                     </a>
                     <a href="git">
                         <img
-                            className="mr-16 w-[50px] h-[50px]"
+                            className="mr-16 w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
                             src={github}
                         />
                     </a>
                     <a href="linkedi">
                         <img
-                            className="w-[50px] h-[50px]"
+                            className="w-[50px] h-[50px] transition-all hover:scale-110 transform"
                             alt=""
                             src={linkedin}
                         />

@@ -4,11 +4,11 @@ import "./ContactUs.css";
 function ContactUs() {
     const inputClass = "glass px-4 text-white placeholder-white flex-1 p-3";
     const labelClass =
-        "text-white  sm:text-[32px] font-medium mr-[85px] sm:w-28 text-xl w-12";
+        "text-white  sm:text-[26px] font-medium mr-[85px] sm:w-28 text-lg w-12 font-monument mt-2";
     return (
         <div className="w-full h-full flex  flex-col items-center">
-            <SectionHeader />
-            <div className=" flex-1 flex w-full justify-center items-center">
+            <SectionHeader title="Contact Us" />
+            <div className=" flex-1 flex w-full justify-center items-center ">
                 <div className="flex flex-col max-w-3xl w-full gap-5 px-3">
                     <div className=" flex w-full">
                         <label className={labelClass}>Name</label>
@@ -42,7 +42,7 @@ function ContactUs() {
                         ></textarea>
                     </div>
                     <button
-                        className="btn w-[150px] h-[40px] px-5 py-2 rounded-lg text-white font-black ml-[197px] hover:scale-110 transform transition-all"
+                        className="btn w-[150px] h-[40px] px-5 py-2 rounded-lg text-white font-black ml-[197px] hover:scale-110 transform transition-all font-monument"
                         type="submit"
                     >
                         Send

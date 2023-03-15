@@ -41,7 +41,7 @@ const Clients = () => {
 
     return (
         <div className=" w-full h-full flex flex-col items-center p-3">
-            <SectionHeader />
+            <SectionHeader title="Our Clients" />
 
             <div className=" w-full max-w-7xl flex-1 mt-20">
                 <Carousel clients={clients} />

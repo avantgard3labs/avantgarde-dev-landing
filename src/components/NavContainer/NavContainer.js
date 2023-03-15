@@ -5,6 +5,7 @@ function NavContainer({ children }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleNav = () => setIsOpen(!isOpen);
+    const buttonClass = " transition-all transform hover:scale-110";
 
     return (
         <div className="nav-container">
@@ -19,11 +20,11 @@ function NavContainer({ children }) {
                 )}
             </div>
             <div className={"nav " + (isOpen ? "nav-on" : "")}>
-                <button>Home</button>
-                <button>Contact</button>
-                <button>About Us</button>
-                <button>Projects</button>
-                <button>Random</button>
+                <button className={buttonClass}>Home</button>
+                <button className={buttonClass}>Contact</button>
+                <button className={buttonClass}>About Us</button>
+                <button className={buttonClass}>Projects</button>
+                <button className={buttonClass}>Random</button>
             </div>
         </div>
     );

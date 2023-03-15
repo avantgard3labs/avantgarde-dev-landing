@@ -51,7 +51,7 @@ function Testimonials() {
 
     return (
         <div className="subpixel-antialiased flex flex-col h-full items-center overflow-auto">
-            <SectionHeader />
+            <SectionHeader title="Testimonials" />
             <div className=" flex-1 justify-center w-full items-center flex-col flex">
                 <div className=" w-full flex justify-center flex-wrap gap-3 max-w-7xl items-start px-3 m-0">
                     {data.map((item, index) => {

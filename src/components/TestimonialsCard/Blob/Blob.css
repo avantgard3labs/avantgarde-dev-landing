@@ -42,7 +42,7 @@
     );
     /* mix-blend-mode: color-dodge; */
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(2px);
 }
 .blob2:hover {
     filter: blur(30px);

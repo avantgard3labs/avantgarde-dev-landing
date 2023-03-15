@@ -9,6 +9,9 @@ module.exports = {
             fontSize: {
                 8: "8px",
             },
+            fontFamily: {
+                monument: "Monument",
+            },
         },
     },
     plugins: [],
