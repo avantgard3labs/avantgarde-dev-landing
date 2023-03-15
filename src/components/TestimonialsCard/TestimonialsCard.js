@@ -2,6 +2,7 @@ import React from "react";
 import { ImQuotesLeft } from "react-icons/im";
 // import "../TestimonialsCard/TestimonialsCard.css";
 
+
 function TestimonialsCard({ review, author, work, img }) {
     console.log(review,author,work,img)
     return (

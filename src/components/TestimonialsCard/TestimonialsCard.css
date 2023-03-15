@@ -1,10 +1,19 @@
-.testimonialsContent h3 {
+@font-face {
+  font-family: 'Monument';
+  src: url("../../font//MonumentExtended-Regular.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* .testimonialsContent h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-align: left;
     margin-bottom: 10px;
+
 }
 .testimonialsContent h4 {
     font-style: normal;
@@ -106,4 +115,4 @@ box-shadow: -1px 5px 25px -5px rgba(255,255,255,1);
 .but{
   color: white;
   font-size: 40px;
-}
+} */
