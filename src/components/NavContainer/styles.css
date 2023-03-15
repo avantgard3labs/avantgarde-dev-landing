@@ -1,0 +1,56 @@
+.nav-container {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    perspective: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease-in-out, width 0.7s ease-out;
+}
+
+.body.nav-on {
+    transform: scale(0.4) translateX(-50%) rotateY(20deg);
+}
+
+.nav {
+    width: 50%;
+    position: absolute;
+    right: -25%;
+    top: 50%;
+    opacity: 0;
+    display: none;
+    transform: translateY(-50%);
+}
+
+.nav.nav-on {
+    right: 0;
+    animation: fade-in 0.7s 0.4s ease-out 1 forwards;
+    display: block;
+}
+
+.nav button {
+    display: block;
+
+    font-size: 50px;
+    background: none;
+    color: white;
+    border: 0;
+    margin: auto;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav button {
+        font-size: 25px;
+    }
+}

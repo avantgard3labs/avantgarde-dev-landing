@@ -1,0 +1,55 @@
+#stars-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(
+        ellipse at bottom,
+        #1b2735 0%,
+        #090a0f 100%
+    );
+}
+
+.small-stars {
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    top: 100%;
+    right: 900px;
+    animation: small-stars-up 8s linear forwards;
+    z-index: 1;
+    perspective: 200px;
+}
+
+.big-stars {
+    width: 5px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+    top: 90%;
+    right: 900px;
+    animation: big-stars-up 12s linear forwards;
+    z-index: 2;
+    perspective: 500px;
+}
+
+@keyframes small-stars-up {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -1%;
+    }
+}
+
+@keyframes big-stars-up {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -1%;
+    }
+}
