@@ -68,7 +68,7 @@ const AGLogo = () => {
             </Canvas>
             <div className=" absolute bottom-4 left-1/2 -translate-x-1/2 font-monument text-center text-[30px] sm:text-[35px] md:text-[45px] font-extrabold text-white flex flex-col items-center">
                 <h1>AvantGarde Labs</h1>
-                <DownArrow className=" h-8" />
+                <DownArrow className=" h-8 animate-bounce" />
             </div>
         </div>
     );
