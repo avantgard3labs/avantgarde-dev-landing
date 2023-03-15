@@ -4,6 +4,13 @@ import SectionHeader from "../../components/shared/SectionHeader";
 import ServicesCard from "../../components/ServicesCard/ServicesCard";
 import "../../components/TestimonialsCard/Blob/Blob.css";
 
+import { ReactComponent as FigmaLogo } from "../../assets/service-icons/Figma.svg";
+import { ReactComponent as ReactLogo } from "../../assets/service-icons/React.svg";
+import { ReactComponent as NodeLogo } from "../../assets/service-icons/Node.svg";
+import { ReactComponent as SolidityLogo } from "../../assets/service-icons/Solidity.svg";
+import { ReactComponent as NFTLogo } from "../../assets/service-icons/NFT.svg";
+import { ReactComponent as EthereumLogo } from "../../assets/service-icons/Ethereum.svg";
+
 function Services() {
     const [pageIndex, setPageIndex] = useState(1);
     const handleIndexChange = (newIndex) => {
@@ -12,34 +19,34 @@ function Services() {
 
     const data = [
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <FigmaLogo />,
+            title: "UI / UX Design",
+            body: "Figma, Adobe XD, TailwindCSS",
         },
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <ReactLogo />,
+            title: "Frontend Development",
+            body: "ReactJS, NextJS, Angular",
         },
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <NodeLogo />,
+            title: "Backend Development",
+            body: "ExpressJS, Databases",
         },
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <SolidityLogo />,
+            title: "Smart Contract Development",
+            body: "OpenZeppelin, Gnosis",
         },
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <NFTLogo />,
+            title: "NFT Development",
+            body: "Bespoke NFT Projects ",
         },
         {
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            title: "Donald Trump",
-            body: "President @ United States",
+            svg: <EthereumLogo />,
+            title: "DApp Development",
+            body: "Uniswap, OpenSea",
         },
     ];
 
@@ -52,7 +59,7 @@ function Services() {
                         return (
                             <ServicesCard
                                 key={index}
-                                img={item.img}
+                                svgComponent={item.svg}
                                 title={item.title}
                                 body={item.body}
                             />
