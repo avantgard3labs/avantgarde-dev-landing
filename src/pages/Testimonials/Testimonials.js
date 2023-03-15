@@ -15,37 +15,36 @@ function Testimonials() {
 
     const data = [
         {
-            review: "I've been using this product from AvantGarde and it's been a game-changer for me. It's secure, easy to use, and offers lightning-fast transactions. I'm impressed with their innovative approach to the digital asset space.",
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            author: "Donald Trump",
-            work: "President @ United States",
+            review: "I was impressed by the range of web3 services and products offered by this company. Their team was knowledgeable, responsive, and helped me navigate the complex world of blockchain technology with ease. I highly recommend them!",
+            img: "https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/292603223_920356132245429_1549884304985149373_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=w7RvLpNW3CwAX-mb6TL&_nc_ht=scontent.fmaa2-2.fna&oh=00_AfA3bhx8XgiOzgWC0XFZouR3dGVqciDEDnXSv6lQaFYmDw&oe=64160CA5",
+            author: "Martin Rosenberger",
+            work: "",
         },
         {
-            review: "I've been using this product from AvantGarde and it's been a game-changer for me. It's secure, easy to use, and offers lightning-fast transactions. I'm impressed with their innovative approach to the digital asset space.",
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            author: "Donald Trump",
-            work: "President @ United States",
-        },
-
-        {
-            review: "I've been using this product from AvantGarde and it's been a game-changer for me. It's secure, easy to use, and offers lightning-fast transactions. I'm impressed with their innovative approach to the digital asset space.",
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            author: "Donald Trump",
-            work: "President @ United States",
+            review: "I was blown away by the level of expertise and professionalism displayed by this company. Their web3 services and products are top-notch, and their team was always available to answer my questions and provide support.",
+            img: "https://i.pinimg.com/originals/32/38/6c/32386c72c7f2a8b5c1a10fc51c149cb1.jpg",
+            author: "Darrin Barnet",
+            work: "",
         },
 
         {
-            review: "I've been using this product from AvantGarde and it's been a game-changer for me. It's secure, easy to use, and offers lightning-fast transactions. I'm impressed with their innovative approach to the digital asset space.",
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            author: "Donald Trump",
-            work: "President @ United States",
+            review: "This company is truly at the forefront of the web3 revolution. Their innovative products and services have helped me to stay ahead of the curve and make the most of this exciting new technology. I can't recommend them enough!",
+            img: "https://www.mckinsey.com/~/media/mckinsey/careers%20redesign/meet%20our%20people/profiles/yetunde/yetunde_profile_1536x1152.jpg?mw=400&car=2:2",
+            author: "Félicienne Ojeda",
+            work: "",
+        },
+        {
+            review: "They have a deep understanding of blockchain technology and are always looking for ways to push the boundaries of what's possible. I look forward to working with them for years to come.",
+            img: "https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/E12KS1G65-W0168RE00G7-133faf432639-512.jpeg",
+            author: "Sylvan Palencia",
+            work: "",
         },
 
         {
-            review: "I've been using this product from AvantGarde and it's been a game-changer for me. It's secure, easy to use, and offers lightning-fast transactions. I'm impressed with their innovative approach to the digital asset space.",
-            img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-            author: "Donald Trump",
-            work: "President @ United States",
+            review: "I was initially skeptical about the potential of blockchain technology, but this company has completely changed my mind. Their web3 products and services are innovative, user-friendly, and truly transformative.",
+            img: "https://www.morganstanley.com/content/dam/msdotcom/people/tiles/tile-shelbie.jpg.img.490.medium.jpg/1592241040775.jpg",
+            author: "Kenna Platt",
+            work: "",
         },
     ];
 
