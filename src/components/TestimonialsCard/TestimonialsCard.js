@@ -21,7 +21,7 @@ function TestimonialsCard({ review, author, work, img, review2 }) {
                     <img
                         src={img}
                         alt="reviewerPic"
-                        className="w-6 h-6 sm:w-10 sm:h-10 rounded-full"
+                        className="w-6 h-6 sm:w-10 sm:h-10 rounded-full object-cover"
                     />
                     <p className=" text-xs sm:text-sm">{author}</p>
                     <p className=" text-8 sm:text-xs">{work}</p>

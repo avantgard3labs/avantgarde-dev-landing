@@ -4,6 +4,7 @@ import SectionHeader from "../../components/shared/SectionHeader";
 import TestimonialsCard from "../../components/TestimonialsCard/TestimonialsCard";
 import Blob from "../../components/TestimonialsCard/Blob/Blob";
 import "../../components/TestimonialsCard/Blob/Blob.css";
+import photo from "../../assets/images/photo1.jpg"
 
 import "./Testimonials.css";
 
@@ -18,7 +19,7 @@ function Testimonials() {
             review: "I was impressed by the range of web3 services and products offered by this company. Their team was knowledgeable, responsive, and helped me navigate the complex world of blockchain technology with ease. I highly recommend them!",
             review2:
                 "I was impressed by the range of web3 services and products offered by this company.",
-            img: "https://scontent.fmaa2-2.fna.fbcdn.net/v/t39.30808-6/292603223_920356132245429_1549884304985149373_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=w7RvLpNW3CwAX-mb6TL&_nc_ht=scontent.fmaa2-2.fna&oh=00_AfA3bhx8XgiOzgWC0XFZouR3dGVqciDEDnXSv6lQaFYmDw&oe=64160CA5",
+            img: "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             author: "Martin Rosenberger",
             work: "",
         },

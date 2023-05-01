@@ -61,7 +61,7 @@ const Carousel = ({ clients }) => {
                         ref={(ref) => {
                             itemsRef.current[index - 1] = ref;
                         }}
-                        className=" sm:h-40 h-24"
+                        className=" sm:h-40 h-24 w-[200px] object-contain"
                     />
                 ))}
             </div>
