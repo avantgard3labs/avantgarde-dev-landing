@@ -15,7 +15,7 @@ function PageContainer({ currentPage, setCurrentPage, toggleNav, isNavOpen }) {
     const [internalPage, setInternalPage] = useState(0);
     const lastTime = useRef(moment());
 
-    const numberOfPages = 6;
+    const numberOfPages = 5;
 
     const getTargetPage = (currentPage, isUp) => {
         if (isUp) {
@@ -101,9 +101,9 @@ function PageContainer({ currentPage, setCurrentPage, toggleNav, isNavOpen }) {
             case 3:
                 return <Testimonials />;
             case 4:
-                return <ContactUs />;
-            case 5:
                 return <Footer />;
+            // case 5:
+            //     return <Footer />;
 
             default:
                 return <AGLogo />;

@@ -29,7 +29,6 @@ function NavContainer({ children }) {
                     "Clients",
                     "Testimonials",
                     "Contact Us",
-                    "About",
                 ].map((item, index) => {
                     return (
                         <button
