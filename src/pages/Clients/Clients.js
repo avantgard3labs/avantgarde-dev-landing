@@ -41,7 +41,7 @@ const Clients = () => {
 
     return (
         <div className=" w-full h-full flex flex-col items-center p-3">
-            <SectionHeader title="Our Clients" />
+            <SectionHeader title="Our Clientsssss" />
 
             <div
                 className=" w-full max-w-7xl"
