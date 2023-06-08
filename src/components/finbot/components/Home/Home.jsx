@@ -102,10 +102,14 @@ function Home() {
                 alt=""
                 className="w-[1240px] absolute overflow-hidden left-[-300px] top-[-400px] z-[-30] blur-[150px] rotate-[113deg]"
             />
-
-            <div className="homeContainer w-full h-screen ellipse ellipses relative">
+            <a href="https://docs.google.com/forms/d/12XoEPRtXo3SkxVvcpyCT7snhiZLLfTArZ7q3m6-nnpo/edit">
+                <button className="border border-[#FF5F77] mx-auto flex p-3 rounded-full mb-3 text-sm sm:text-lg px-10 font-bold items-center align-middle cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    Join waitlist
+                </button>
+            </a>
+            <div className=" w-full  ellipse ellipses relative">
                 <div className="flex flex-col p-2 md:p-4 max-w-[1400px] mx-auto">
-                    <div className="mb-[280px]">
+                    <div className="mt-[10px] ">
                         <h2
                             className={`leading-10 text-2xl md:text-3xl lg:text-[55px] md:mb-[20px] text-center text-white mt-[-140px] font-semibold `}
                         >
@@ -113,7 +117,7 @@ function Home() {
                         </h2>
 
                         <h2
-                            className={`leading-10 font-semibold text-2xl md:text-3xl lg:text-[55px] mb-3 md:mb-[50px] text-center text-white ${
+                            className={`leading-10 font-semibold  text-2xl md:text-3xl lg:text-[55px] mb-3 md:mb-[100px] text-center text-white ${
                                 showInvoice ? "faade-in" : "faade-out"
                             }`}
                         >
@@ -125,10 +129,11 @@ function Home() {
                             className={`my-5 styless ${showHr ? "" : "none"}`}
                         />
 
-                        <button className=" cursor-pointer border border-[#FF5F77] mx-auto justify-center flex p-3 rounded-full mb-3 text-sm sm:text-lg px-10 font-bold relative items-center align-middle    ">
-                            Join waitlist
-                        </button>
-    
+                        {/* <a href="https://docs.google.com/forms/d/12XoEPRtXo3SkxVvcpyCT7snhiZLLfTArZ7q3m6-nnpo/edit">
+                            <button className="border border-[#FF5F77] mx-auto justify-center flex p-3 rounded-full mb-3 text-sm sm:text-lg px-10 font-bold relative items-center align-middle cursor-pointer ">
+                                Join waitlist
+                            </button>
+                        </a> */}
                     </div>
 
                     {!showMonitor && (

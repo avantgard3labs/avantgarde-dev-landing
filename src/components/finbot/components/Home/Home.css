@@ -6,8 +6,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 80px;
+
+}
+.waitlist{
+  cursor: pointer;
 }
 
 .buttontop:hover {

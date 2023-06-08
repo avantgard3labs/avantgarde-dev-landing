@@ -10,7 +10,8 @@ import piczcenter from "../../../../assets/finbot/piczcenter.svg";
 
 function Chains() {
     return (
-        <div className="w-[1400px] mx-auto mt-[300px] mb-[200px] md:mb-[100px] ">
+        <div className="w-[1400px] mx-auto mt-[300px] mb-[200px] md:mb-[200px] ">
+
             <div className="relative  ">
                 <img
                     src={mask2}
@@ -24,6 +25,7 @@ function Chains() {
                 />
             </div>
             <div className="flex flex-col md:flex-row  gap-10">
+      
                 <div className="flex items-top md:w-1/2  ">
                     <div className="p-4">
                         <h2 className="text-lg md:text-5xl mt-[60px] ">
