@@ -1,0 +1,31 @@
+.logoImg {
+    width: 50px;
+}
+.navItems {
+    color: #a1a1aa;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    filter: contrast(2);
+    transition: 0.3s ease;
+}
+.navItems:hover {
+}
+.navbarContainer {
+    /* background-image: linear-gradient(to top, #18181b, #151523, #10112a, #0b0c31, #050538); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right ul li:hover {
+    color: #0e14c4;
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.right ul li {
+    transition: 0.5s ease;
+    box-sizing: border-box;
+}
+
+@media (max-width: 850px) {
+}

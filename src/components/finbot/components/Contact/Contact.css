@@ -1,0 +1,44 @@
+.whatsapp {
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border: 1px solid transparent;
+    background-color: #128c7e;
+
+    color: white;
+    transition: 0.5s ease-in;
+}
+.whatsapp:hover {
+    color: white;
+    border: 1px solid #25d366;
+    background-color: #075e54;
+}
+
+.email {
+    border-radius: 9999px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #34b7f1;
+    border: 1px solid transparent;
+    color: white;
+    transition: 0.5s ease-in;
+}
+.email:hover {
+    color: white;
+    border: 1px solid #25d366;
+    background-color: #3479f1;
+}
+.buttontops {
+    background-color: #5cee9c;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+.buttontops:hover {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
